@@ -1,20 +1,15 @@
 body {
-    margin: 0;
-    padding: 0;
 }
 .wrap {
     width: 1092px;
     height: 129px;
-    display: flex;
     flex-direction: column;
     margin: 0 auto;
-    
     }
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .logo {
     width: 20%;
@@ -31,9 +26,6 @@ nav {
     flex: 1;
     text-align: center;
     justify-content: center;
-    
-    
-    
 }
 nav a {
     text-decoration: none;
@@ -62,4 +54,104 @@ nav a {
     border-radius: 50%;
     background-color: white;
     border: 1px solid black;
+}
+
+.hero-content {
+    width: 1092px;
+    padding-left: 1rem;
+    margin-top: 5rem;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.movie-info {
+    margin-bottom: 3rem;
+    font-size: 0.8rem;
+  }
+  .user-ratings {
+    color: gold;
+    
+  }
+  .imdb {
+    color: gray;
+  }
+  .imdb-rating{
+    margin-right: 2rem;
+  }
+  .maturity-rating{
+    border: 1px solid black;
+    width: 2rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    margin-right: 1rem;
+  }
+.duration{
+font-weight: bold;
+}
+.movie-description {
+    margin-right:  50%;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: red;
+}
+.movie-details ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+.btn{
+    display: flex;
+    text-align: center;
+}
+.btn i {
+    position: absolute;
+    height: 3rem;
+    margin-left: 1rem;
+    align-content: center;
+    color: white;
+}
+.movie-button{
+    width: 10rem;
+    height: 3rem;
+    background-color: red; 
+    color: white;
+    border: rgb(117, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.header-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header-section a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.header-section h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+.movie-container {
+    display: flex;
+    justify-content: space-between;
+}
+.movie-card {
+    border: 1px solid black;
+    padding: 3rem 5rem 1rem 1rem;
+    text-align: left;
+}
+.durations{
+
+}
+h3 {
 }

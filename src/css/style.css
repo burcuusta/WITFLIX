@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 1092px;
+    height: 129px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo {
+    width: 20%;
+    display: inline-block;
+    float: left;
+}
+.search {
+    display: flex;
+    justify-content:right;
+    gap: 1rem;
+    
+}
+nav {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    
+    
+    
+}
+nav a {
+    text-decoration: none;
+    margin: 0 0.4rem;
+    color: black;
+}
+.arama {
+    display: flex;
+    align-items: center;
+}
+.arama input {
+    display: flex;
+    width: 6rem;
+    height: 2rem;
+    border: 1px solid black;
+}
+.arama i {
+    display: flex;
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 0.2rem;
+}
+.profile {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+}

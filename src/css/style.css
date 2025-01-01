@@ -1,11 +1,17 @@
 body {
+    background-color: black;
+}
+header, main, section, footer {
+    padding: 1rem;
 }
 .wrap {
-    width: 1092px;
+    max-width: 1092px;
     height: 129px;
-    flex-direction: column;
+    margin-top: 1rem;
     margin: 0 auto;
+    flex-direction: column;
     }
+    
 header {
     display: flex;
     align-items: center;
@@ -13,8 +19,6 @@ header {
 }
 .logo {
     width: 20%;
-    display: inline-block;
-    float: left;
 }
 .search {
     display: flex;
@@ -23,14 +27,14 @@ header {
     
 }
 nav {
-    flex: 1;
     text-align: center;
     justify-content: center;
 }
 nav a {
     text-decoration: none;
     margin: 0 0.4rem;
-    color: black;
+    color:  rgb(250, 24, 24);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .arama {
     display: flex;
@@ -40,17 +44,25 @@ nav a {
     display: flex;
     width: 6rem;
     height: 2rem;
-    border: 1px solid black;
+    border: 1px solid bisque;
+    cursor: pointer;
+    background:  black;
+    color: bisque;
 }
 .arama i {
     display: flex;
     position: absolute;
     margin-left: 5rem;
-    margin-top: 0.2rem;
+    margin-top: 0;
+}
+.bell {
+    margin-top: 1rem;
+    color: bisque;
+    box-shadow: black;
 }
 .profile {
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     background-color: white;
     border: 1px solid black;
@@ -59,19 +71,29 @@ nav a {
 .hero-content {
     width: 1092px;
     padding-left: 1rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee8dcd73-06e0-40fb-b9ce-13a91be98b17/dg8qbvr-a5495578-294b-4a30-86d8-2800177d4c65.jpg/v1/fill/w_1280,h_720,q_75,strp/lord_of_the_rings_hd_wallpapers_by_3dculture_dg8qbvr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZWU4ZGNkNzMtMDZlMC00MGZiLWI5Y2UtMTNhOTFiZTk4YjE3XC9kZzhxYnZyLWE1NDk1NTc4LTI5NGItNGEzMC04NmQ4LTI4MDAxNzdkNGM2NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.JUDY_dFe54W5lz0kqwLeQfq97bQCgmDv7ejEh5jfJDg");
+
+opacity: 0.8;
+background-size: cover;
 }
 h1 {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    color: rgb(250, 24, 24);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .movie-info {
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     font-size: 0.8rem;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   .user-ratings {
     color: gold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5rem;
     
   }
   .imdb {
@@ -81,7 +103,7 @@ h1 {
     margin-right: 2rem;
   }
   .maturity-rating{
-    border: 1px solid black;
+    border: 1px solid wheat;
     width: 2rem;
     border-radius: 0.3rem;
     text-align: center;
@@ -93,14 +115,20 @@ font-weight: bold;
 .movie-description {
     margin-right:  50%;
     margin-bottom: 1rem;
+    color:wheat;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .highlight {
     color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
 }
 .movie-details ul {
     list-style-type: none;
     margin-bottom: 1rem;
+    color: wheat;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .btn{
     display: flex;
@@ -121,6 +149,7 @@ font-weight: bold;
     border: rgb(117, 0, 0);
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 section {
     margin-top: 1rem;
@@ -130,9 +159,11 @@ section {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   color: wheat;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .header-section a {
-    color: black;
+    color: wheat;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
@@ -144,14 +175,94 @@ section {
 .movie-container {
     display: flex;
     justify-content: space-between;
+    color: white;
+    
 }
 .movie-card {
     border: 1px solid black;
     padding: 3rem 5rem 1rem 1rem;
     text-align: left;
-}
-.durations{
+    color: white;
+    background-size: cover;
+    width: 30%;
+ }
+ .movie-card h3 {
+    color: rgb(117, 0, 0);
+    text-shadow: 2px 2px 4px wheat;
+    
+ }
+
+.popular .movie-card:first-child {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMTkyMzQzNzk0Nl5BMl5BanBnXkFtZTcwMjI2MjY0NA@@.jpg");
+
 
 }
-h3 {
+.popular .movie-card:nth-child(2) {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMTQ2NDg4OTg0NF5BMl5BanBnXkFtZTgwNTg0MzQ4MDE@._V1_QL75_UX328_.jpg");
+   
+}
+.popular .movie-card:last-child {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMTc2NDA0NzI1OV5BMl5BanBnXkFtZTcwNTQ4NjgyMw@@.jpg");
+}
+
+.recommended .movie-card:first-child {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMTQ0MzA4ODY2MF5BMl5BanBnXkFtZTcwMTgxNTUxMw@@._V1_QL75_UX320_.jpg");
+}
+.recommended .movie-card:nth-child(2) {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMjIzMjM3NjUzMV5BMl5BanBnXkFtZTcwNjQ0NjcxNA@@._V1_QL75_UX332_.jpg");
+}
+.recommended .movie-card:last-child {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMTI3ODA1ODkwN15BMl5BanBnXkFtZTcwODQ0OTk1Mw@@._V1_QL75_UX820_.jpg");
+}
+
+footer {
+}
+.container {
+    border-top: 1px solid wheat;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.copyright {
+    color: wheat;
+} 
+.copyright p {
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
+.copyright ul {
+    display: flex;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+.copyright li {
+    margin: 0 0.5rem;
+    list-style-type:none;
+}
+.copyright a {
+    text-decoration: none;
+    color: wheat;
+}
+.social-media {
+    color: wheat;
+}
+.social-media p {
+    margin-bottom: 0.5rem;
+}
+.download {
+   color: wheat;
+}
+.download p {
+    margin-bottom: 0.5rem;
+}
+.download img {
+    width: 30%;
+    margin: 0 0.5rem;
+}
+.social-media img{
+    width: 20%;
+    margin: 0 10px;
 }

@@ -63,7 +63,6 @@ nav a {
     border-radius: 50%;
     background-color: white;
     border: 1px solid none;
-    box-shadow: 0 2px 5px -3px rgb(0, 0, 0), 0 5px 8px -2px rgb(0, 0, 0);
 }
 
 .hero-content {
@@ -187,7 +186,7 @@ section {
     box-shadow: 0 2px 9px -3px rgb(0, 0, 0), 0 9px 10px -2px rgb(0, 0, 0);
  }
  .movie-card h3 {
-    color: rgb(117, 0, 0);
+    color:blanchedalmond;
     text-shadow: 2px 2px 4px rgb(116, 108, 94);
     
  }
@@ -226,7 +225,6 @@ footer {
 
 }
 
-/* Footer Yardım ve Bilgi Alanı */
 .footer-helps {
     width: 40%;
     padding-right: 1rem;
@@ -271,6 +269,9 @@ footer {
     border-radius: 50%;
     background-color: transparent;
 }
+.social-icons:hover{
+    transform: scale(1.2);
+}
 
 .view-all {
     display: card-container;
@@ -296,6 +297,9 @@ footer {
     margin: 5px 0;
     display: inline-block;
 }
+.apps-icons:hover {
+    transform: scale(1.05);
+}
 
 .section-header {
     display: flex;
@@ -315,7 +319,7 @@ position: relative;
     }
     header nav {
         position: absolute;
-        top: 70%;
+        top: 80%;
         right: 30%;
     }
 .hero-content {
